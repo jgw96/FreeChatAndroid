@@ -1,0 +1,17 @@
+<ion-navbar primary *navbar>
+  <button menuToggle>
+    <icon menu></icon>
+  </button>
+  <ion-title>Settings</ion-title>
+</ion-navbar>
+
+<ion-content>
+    
+    <ion-list no-lines>
+        <ion-item (click)="clearMessages()">
+            <icon trash item-left></icon>
+            Clear Messages
+        </ion-item>
+    </ion-list>
+
+</ion-content>

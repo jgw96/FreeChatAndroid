@@ -1,0 +1,67 @@
+<ion-navbar primary *navbar>
+    <button menuToggle>
+        <icon menu></icon>
+    </button>
+    <ion-title>Rooms</ion-title>
+</ion-navbar>
+
+<ion-content>
+    <ion-list>
+        <!--<ion-item (click)="goToNews()">
+        <p class="chatText">News</p>
+    </ion-item>
+    <ion-item (click)="goToFirefoxOS()">
+        <p class="chatText">Firefox OS</p>
+    </ion-item>
+    <ion-item (click)="goToSports()">
+        <p class="chatText">Sports</p>
+    </ion-item>-->
+        <ion-card>
+            <img src="news.jpg" />
+            <ion-card-content>
+                <h2 class="card-title">
+                    News
+                </h2>
+                <p>
+                    Get and discuss the news with people all over the world!
+                </p>
+            </ion-card-content>
+            
+            <ion-item actions>
+                <button (click)="goToNews()" clear item-right secondary>Chat Now</button>
+            </ion-item>
+        </ion-card>
+
+        <ion-card>
+            <img src="firefoxOS.png" />
+            <ion-card-content>
+                <h2 class="card-title">
+                    FirefoxOS
+                </h2>
+                <p>
+                    Discuss the greatest HTML5 project with enthusiasts everywhere!
+                </p>
+            </ion-card-content>
+            
+            <ion-item actions>
+                <button (click)="goToFirefoxOS()" clear item-right secondary>Chat Now</button>
+            </ion-item>
+        </ion-card>
+
+        <ion-card>
+            <img src="sports.jpeg" />
+            <ion-card-content>
+                <h2 class="card-title">
+                     Sports
+                </h2>
+                <p>
+                    Like Sports! Well this is the room for you!
+                </p>
+            </ion-card-content>
+            
+            <ion-item actions>
+                <button (click)="goToSports()" clear item-right secondary>Chat Now</button>
+            </ion-item>
+        </ion-card>
+    </ion-list>
+</ion-content>
